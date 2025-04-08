@@ -14,7 +14,7 @@ pyautogui.PAUSE = 1
     # abrir o navegador (Opera)
 
 pyautogui.press('win')
-pyautogui.write('Navegador Opera GX')
+pyautogui.write('edge')
     # entrar no link 
 pyautogui.press('enter')
 
@@ -36,11 +36,11 @@ pyautogui.press('enter')
 # 3. importar a base de dados de produtos para cadastrar
 import pandas as pd
 
-base_de_dados = pd.read_csv('Aula 1/produtos.csv')
+base_de_dados = pd.read_csv('produtos.csv')
 # tabela = pd.read_csv("produtos.csv")
 print(base_de_dados)
 
-# # 4. cadastrar um produto ###
+# 4. cadastrar um produto ###
 
 # 5. repetir isso até acabar a base de dados
 
@@ -86,6 +86,3 @@ for linha in base_de_dados.index:
     # ENTER
     pyautogui.press('enter')
     pyautogui.scroll(5000)
-
-
-    
